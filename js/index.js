@@ -3,7 +3,7 @@ let hacker1 = "Jordi";
 
 console.log(`The driver's name is ${hacker1}`);
 
-let hacker2 = "Leandro";
+let hacker2 = "brian";
 
 console.log(`The navigator's name is ${hacker2}`);
 
@@ -24,18 +24,18 @@ if (letterNum > 0) {
   );
 }
 
-/* switch (letterNum) {
-  case  > 0:
-  console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
-  break;
-  case (hacker1.length < hacker2.length):
-  console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
-  break;
-  case (hacker1.length = hacker2.length):
-  console.log(`Wow, you both have equally long names, ${hacker2.length} characters!`);
-  break;
- }
- */
+// var letterNum = hacker1.length - hacker2.length;
+// switch (letterNum) {
+//   case 1:
+//     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
+//   break
+//   case -1:
+//     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
+//     break
+//   case 0:
+//         console.log(`Wow, you both have equally long names, ${hacker2.length} characters!`)
+//     break
+// }
 
 // Iteration 3: Loops
 // 3.1 Print all the characters of the driver's name, separated by a // space and in capitals i.e.
@@ -82,7 +82,11 @@ let countWord =
   lorem.split(".  ").length +
   lorem.split(".\n").length;
 
-console.log(countWord);
+let etWord = lorem.split("et").length;
+
+console.log(`Hay ${countWord} palabras`);
+console.log(`Hay ${etWord} paklabras et`);
+
 // Bonus 2
 let phraseToCheck = "amor roma";
 let phrase = "";
